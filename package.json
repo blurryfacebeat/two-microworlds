@@ -1,12 +1,19 @@
 {
   "name": "two-microworlds",
+  "author": "Morozov Vyacheslav (https://github.com/blurryfacebeat)",
+  "description": "Two small worlds united by a big idea",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "private": true,
   "license": "ISC",
-  "description": ""
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.4"
+  },
+  "packageManager": "npm@10.9.2"
 }

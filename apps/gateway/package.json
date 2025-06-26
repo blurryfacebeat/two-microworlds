@@ -1,0 +1,13 @@
+{
+  "name": "gateway",
+  "author": "Morozov Vyacheslav (https://github.com/blurryfacebeat)",
+  "description": "Gateway application",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "webpack serve --config webpack.config.mjs"
+  },
+  "dependencies": {
+    "@shared/config": "*"
+  }
+}

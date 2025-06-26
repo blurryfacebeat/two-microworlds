@@ -29,6 +29,8 @@ export default {
       name: 'gateway',
       remotes: {
         nextApp: 'nextApp@http://localhost:3001/_next/static/remoteEntry.js',
+        imageApp: 'imageApp@http://localhost:3002/remoteEntry.js',
+        todoApp: 'todoApp@http://localhost:3003/remoteEntry.js',
       },
       shared: {
         react: {
@@ -41,6 +43,16 @@ export default {
           singleton: true,
           requiredVersion: '^19.1.0',
           eager: true,
+          strictVersion: true,
+        },
+        vue: {
+          singleton: true,
+          requiredVersion: '^3.5.17',
+          strictVersion: true,
+        },
+        'vue-router': {
+          singleton: true,
+          requiredVersion: '^4.5.1',
           strictVersion: true,
         },
       },

@@ -1,0 +1,13 @@
+{
+  "name": "image-app",
+  "author": "Morozov Vyacheslav (https://github.com/blurryfacebeat)",
+  "description": "Image app",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "webpack serve --config webpack.config.mjs"
+  },
+  "dependencies": {
+    "@shared/config": "*"
+  }
+}
